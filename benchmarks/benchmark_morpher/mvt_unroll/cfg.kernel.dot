@@ -1,0 +1,25 @@
+digraph "CFG for 'kernel' function" {
+	label="CFG for 'kernel' function";
+
+	Node0x5650aec7f420 [shape=record,label="{entry:\l  br label %for.cond1.preheader\l}"];
+	Node0x5650aec7f420 -> Node0x5650aec7f550;
+	Node0x5650aec7f550 [shape=record,label="{for.cond1.preheader:                              \l  %i.054 = phi i32 [ 0, %entry ], [ %inc9, %for.end ]\l  br label %for.body3\l}"];
+	Node0x5650aec7f550 -> Node0x5650aec7f750;
+	Node0x5650aec7f750 [shape=record,label="{for.body3:                                        \l  %s.053 = phi i32 [ 0, %for.cond1.preheader ], [ %add, %for.body3 ]\l  %j.052 = phi i32 [ 0, %for.cond1.preheader ], [ %inc, %for.body3 ]\l  %call = call i32 bitcast (i32 (...)* @please_map_me to i32 ()*)() #8\l  %arrayidx4 = getelementptr inbounds [32 x [32 x i32]], [32 x [32 x i32]]*\l... @A, i32 0, i32 %i.054, i32 %j.052\l  %manupa0 = load i32, i32* %arrayidx4, align 4, !tbaa !3\l  %arrayidx5 = getelementptr inbounds [32 x i32], [32 x i32]* @y_1, i32 0, i32\l... %j.052\l  %manupa1 = load i32, i32* %arrayidx5, align 4, !tbaa !3\l  %mul = mul nsw i32 %manupa1, %manupa0\l  %add = add nsw i32 %mul, %s.053\l  %inc = add nuw nsw i32 %j.052, 1\l  %exitcond57 = icmp eq i32 %inc, 32\l  br i1 %exitcond57, label %for.end, label %for.body3\l|{<s0>T|<s1>F}}"];
+	Node0x5650aec7f750:s0 -> Node0x5650aec7f5c0;
+	Node0x5650aec7f750:s1 -> Node0x5650aec7f750;
+	Node0x5650aec7f5c0 [shape=record,label="{for.end:                                          \l  %add.lcssa = phi i32 [ %add, %for.body3 ]\l  %arrayidx6 = getelementptr inbounds [32 x i32], [32 x i32]* @x1, i32 0, i32\l... %i.054\l  %manupa2 = load i32, i32* %arrayidx6, align 4, !tbaa !3\l  %add7 = add nsw i32 %manupa2, %add.lcssa\l  store i32 %add7, i32* %arrayidx6, align 4, !tbaa !3\l  %inc9 = add nuw nsw i32 %i.054, 1\l  %exitcond58 = icmp eq i32 %inc9, 32\l  br i1 %exitcond58, label %for.cond14.preheader.preheader, label\l... %for.cond1.preheader\l|{<s0>T|<s1>F}}"];
+	Node0x5650aec7f5c0:s0 -> Node0x5650aec815b0;
+	Node0x5650aec7f5c0:s1 -> Node0x5650aec7f550;
+	Node0x5650aec815b0 [shape=record,label="{for.cond14.preheader.preheader:                   \l  br label %for.cond14.preheader\l}"];
+	Node0x5650aec815b0 -> Node0x5650aec81730;
+	Node0x5650aec81730 [shape=record,label="{for.cond14.preheader:                             \l  %i.151 = phi i32 [ %inc28, %for.inc27 ], [ 0,\l... %for.cond14.preheader.preheader ]\l  %arrayidx17 = getelementptr inbounds [32 x i32], [32 x i32]* @x2, i32 0, i32\l... %i.151\l  %arrayidx17.promoted = load i32, i32* %arrayidx17, align 4, !tbaa !3\l  br label %for.body16\l}"];
+	Node0x5650aec81730 -> Node0x5650aec81d90;
+	Node0x5650aec81d90 [shape=record,label="{for.body16:                                       \l  %add2255 = phi i32 [ %arrayidx17.promoted, %for.cond14.preheader ], [\l... %add22, %for.body16 ]\l  %j.150 = phi i32 [ 0, %for.cond14.preheader ], [ %inc25, %for.body16 ]\l  %arrayidx19 = getelementptr inbounds [32 x [32 x i32]], [32 x [32 x i32]]*\l... @A, i32 0, i32 %j.150, i32 %i.151\l  %manupa3 = load i32, i32* %arrayidx19, align 4, !tbaa !3\l  %arrayidx20 = getelementptr inbounds [32 x i32], [32 x i32]* @y_2, i32 0,\l... i32 %j.150\l  %manupa4 = load i32, i32* %arrayidx20, align 4, !tbaa !3\l  %mul21 = mul nsw i32 %manupa4, %manupa3\l  %add22 = add nsw i32 %mul21, %add2255\l  %inc25 = add nuw nsw i32 %j.150, 1\l  %exitcond = icmp eq i32 %inc25, 32\l  br i1 %exitcond, label %for.inc27, label %for.body16\l|{<s0>T|<s1>F}}"];
+	Node0x5650aec81d90:s0 -> Node0x5650aec817a0;
+	Node0x5650aec81d90:s1 -> Node0x5650aec81d90;
+	Node0x5650aec817a0 [shape=record,label="{for.inc27:                                        \l  %add22.lcssa = phi i32 [ %add22, %for.body16 ]\l  store i32 %add22.lcssa, i32* %arrayidx17, align 4, !tbaa !3\l  %inc28 = add nuw nsw i32 %i.151, 1\l  %exitcond56 = icmp eq i32 %inc28, 32\l  br i1 %exitcond56, label %for.end29, label %for.cond14.preheader\l|{<s0>T|<s1>F}}"];
+	Node0x5650aec817a0:s0 -> Node0x5650aec827d0;
+	Node0x5650aec817a0:s1 -> Node0x5650aec81730;
+	Node0x5650aec827d0 [shape=record,label="{for.end29:                                        \l  ret void\l}"];
+}

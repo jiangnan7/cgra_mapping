@@ -1,0 +1,2 @@
+./benchmarks/express/fir1/fir1_DFG.1_0.txt 1
+./benchmarks/express/fir1/fir1_DFG.0_0.txt 0

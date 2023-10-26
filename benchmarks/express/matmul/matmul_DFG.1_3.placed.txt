@@ -1,0 +1,8 @@
+MUL_2 MUL4
+ADD_1.out0 ADD1.out0
+ADD_5.in0 ADD2.in0
+ADD_5 ADD2
+ADD_5.out0 ADD2.out0
+MUL_2.in0 MUL4.in0
+MUL_2.out0 MUL4.out0
+ADD_1 ADD1

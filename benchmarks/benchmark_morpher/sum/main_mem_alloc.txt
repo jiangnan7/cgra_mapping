@@ -1,0 +1,5 @@
+var_name,base_addr
+add,16384
+a,0
+loopend,16383
+loopstart,32766

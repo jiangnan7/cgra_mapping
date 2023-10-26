@@ -1,0 +1,15 @@
+digraph "CFG for 'kernel' function" {
+	label="CFG for 'kernel' function";
+
+	Node0x560f26216aa0 [shape=record,label="{entry:\l  br label %for.cond1.preheader\l}"];
+	Node0x560f26216aa0 -> Node0x560f26216bd0;
+	Node0x560f26216bd0 [shape=record,label="{for.cond1.preheader:                              \l  %t.021 = phi i32 [ 0, %entry ], [ %inc10, %for.inc9 ]\l  br label %for.body3\l}"];
+	Node0x560f26216bd0 -> Node0x560f26216e10;
+	Node0x560f26216e10 [shape=record,label="{for.body3:                                        \l  %i.020 = phi i32 [ 1, %for.cond1.preheader ], [ %add5, %for.body3 ]\l  %call = call i32 bitcast (i32 (...)* @please_map_me to i32 ()*)() #7\l  %sub = add nsw i32 %i.020, -1\l  %arrayidx = getelementptr inbounds [100 x i32], [100 x i32]* @A, i32 0, i32\l... %sub\l  %manupa0 = load i32, i32* %arrayidx, align 4, !tbaa !3\l  %arrayidx4 = getelementptr inbounds [100 x i32], [100 x i32]* @A, i32 0, i32\l... %i.020\l  %manupa1 = load i32, i32* %arrayidx4, align 4, !tbaa !3\l  %add = add nsw i32 %manupa1, %manupa0\l  %add5 = add nuw nsw i32 %i.020, 1\l  %arrayidx6 = getelementptr inbounds [100 x i32], [100 x i32]* @A, i32 0, i32\l... %add5\l  %manupa2 = load i32, i32* %arrayidx6, align 4, !tbaa !3\l  %add7 = add nsw i32 %add, %manupa2\l  %shr = ashr i32 %add7, 1\l  %arrayidx8 = getelementptr inbounds [100 x i32], [100 x i32]* @B, i32 0, i32\l... %i.020\l  store i32 %shr, i32* %arrayidx8, align 4, !tbaa !3\l  %exitcond = icmp eq i32 %add5, 99\l  br i1 %exitcond, label %for.inc9, label %for.body3\l|{<s0>T|<s1>F}}"];
+	Node0x560f26216e10:s0 -> Node0x560f26216c70;
+	Node0x560f26216e10:s1 -> Node0x560f26216e10;
+	Node0x560f26216c70 [shape=record,label="{for.inc9:                                         \l  %inc10 = add nuw nsw i32 %t.021, 1\l  %exitcond22 = icmp eq i32 %inc10, 100\l  br i1 %exitcond22, label %for.end11, label %for.cond1.preheader\l|{<s0>T|<s1>F}}"];
+	Node0x560f26216c70:s0 -> Node0x560f26218610;
+	Node0x560f26216c70:s1 -> Node0x560f26216bd0;
+	Node0x560f26218610 [shape=record,label="{for.end11:                                        \l  ret void\l}"];
+}

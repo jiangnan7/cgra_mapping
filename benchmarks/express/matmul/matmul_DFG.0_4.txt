@@ -1,0 +1,63 @@
+vertex MUL_105.out0
+vertex ADD_48.out0
+vertex MUL_45
+vertex ADD_198
+vertex ADD_206.out0
+vertex ADD_99
+vertex ADD_48
+vertex ADD_99.out0
+vertex ADD_108
+vertex MUL_96
+vertex MUL_96.out0
+vertex ADD_202.in0
+vertex MUL_105
+vertex ADD_108.out0
+vertex ADD_99.in0
+vertex MUL_189
+vertex ADD_48.in0
+vertex ADD_206
+vertex ADD_202.out0
+vertex ADD_141.in0
+vertex MUL_189.out0
+vertex ADD_192
+vertex ADD_141
+vertex MUL_138
+vertex ADD_198.out0
+vertex MUL_199.out0
+vertex MUL_199
+vertex ADD_108.in0
+vertex MUL_199.in0
+vertex MUL_138.out0
+vertex ADD_202
+vertex ADD_192.out0
+vertex ADD_192.in0
+vertex ADD_141.out0
+vertex MUL_45.out0
+net MUL_105.out0 ADD_108.in0
+net MUL_45 MUL_45.out0
+net ADD_198 ADD_198.out0
+net ADD_99 ADD_99.out0
+net ADD_48 ADD_48.out0
+net ADD_108 ADD_108.out0
+net MUL_96 MUL_96.out0
+net MUL_96.out0 ADD_99.in0
+net ADD_202.in0 ADD_202
+net MUL_105 MUL_105.out0
+net ADD_99.in0 ADD_99
+net MUL_189 MUL_189.out0
+net ADD_48.in0 ADD_48
+net ADD_206 ADD_206.out0
+net ADD_141.in0 ADD_141
+net MUL_189.out0 ADD_192.in0
+net ADD_192 ADD_192.out0
+net ADD_141 ADD_141.out0
+net MUL_138 MUL_138.out0
+net ADD_198.out0 MUL_199.in0
+net MUL_199.out0 ADD_202.in0
+net MUL_199 MUL_199.out0
+net ADD_108.in0 ADD_108
+net MUL_199.in0 MUL_199
+net MUL_138.out0 ADD_141.in0
+net ADD_202 ADD_202.out0
+net ADD_192.in0 ADD_192
+net MUL_45.out0 ADD_48.in0
