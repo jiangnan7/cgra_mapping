@@ -1,0 +1,7 @@
+var_name,base_addr
+A,0
+i.054,26664
+add,17776
+y_1,8888
+loopend,39995
+loopstart,79990

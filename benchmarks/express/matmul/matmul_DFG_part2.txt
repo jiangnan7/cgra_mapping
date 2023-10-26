@@ -1,0 +1,51 @@
+vertex ADD_57.in0
+    attr optype str add.in0
+vertex ADD_82
+    attr optype str add
+vertex MUL_54
+    attr optype str mul
+vertex ADD_1
+    attr optype str add
+vertex MUL_79
+    attr optype str mul
+vertex ADD_1.out0
+    attr optype str add.out0
+vertex ADD_82.in0
+    attr optype str add.in0
+vertex MUL_2.in0
+    attr optype str mul.in0
+vertex ADD_57.out0
+    attr optype str add.out0
+vertex MUL_2.out0
+    attr optype str mul.out0
+vertex ADD_5.in0
+    attr optype str add.in0
+vertex ADD_57
+    attr optype str add
+vertex MUL_79.out0
+    attr optype str mul.out0
+vertex ADD_5
+    attr optype str add
+vertex MUL_2
+    attr optype str mul
+vertex ADD_5.out0
+    attr optype str add.out0
+vertex ADD_82.out0
+    attr optype str add.out0
+vertex MUL_54.out0
+    attr optype str mul.out0
+net ADD_57.in0 ADD_57
+net ADD_82 ADD_82.out0
+net MUL_54 MUL_54.out0
+net ADD_1 ADD_1.out0
+net MUL_79 MUL_79.out0
+net ADD_1.out0 MUL_2.in0
+net ADD_82.in0 ADD_82
+net MUL_2.in0 MUL_2
+net MUL_2.out0 ADD_5.in0
+net ADD_5.in0 ADD_5
+net ADD_57 ADD_57.out0
+net MUL_79.out0 ADD_82.in0
+net ADD_5 ADD_5.out0
+net MUL_2 MUL_2.out0
+net MUL_54.out0 ADD_57.in0

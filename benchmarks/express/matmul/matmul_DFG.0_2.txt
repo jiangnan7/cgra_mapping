@@ -1,0 +1,9 @@
+vertex MUL_163
+vertex ADD_166
+vertex ADD_166.out0
+vertex MUL_163.out0
+vertex ADD_166.in0
+net MUL_163 MUL_163.out0
+net ADD_166 ADD_166.out0
+net MUL_163.out0 ADD_166.in0
+net ADD_166.in0 ADD_166

@@ -1,0 +1,10 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x55fcd42a1ad0 [shape=record,label="{entry:\l  br label %for.body\l}"];
+	Node0x55fcd42a1ad0 -> Node0x55fcd42a1c00;
+	Node0x55fcd42a1c00 [shape=record,label="{for.body:                                         \l  %i.010 = phi i32 [ 0, %entry ], [ %inc, %for.body ]\l  %sum.09 = phi i32 [ 0, %entry ], [ %add, %for.body ]\l  %call = call i32 bitcast (i32 (...)* @please_map_me to i32 ()*)() #3\l  %arrayidx = getelementptr inbounds [20 x i32], [20 x i32]* @a, i32 0, i32\l... %i.010\l  %manupa0 = load volatile i32, i32* %arrayidx, align 4, !tbaa !3\l  %add = add nsw i32 %manupa0, %sum.09\l  %inc = add nuw nsw i32 %i.010, 1\l  %exitcond = icmp eq i32 %inc, 20\l  br i1 %exitcond, label %for.end, label %for.body\l|{<s0>T|<s1>F}}"];
+	Node0x55fcd42a1c00:s0 -> Node0x55fcd42a34f0;
+	Node0x55fcd42a1c00:s1 -> Node0x55fcd42a1c00;
+	Node0x55fcd42a34f0 [shape=record,label="{for.end:                                          \l  %add.lcssa = phi i32 [ %add, %for.body ]\l  %call1 = call i32 (i8*, ...) @printf(i8* nonnull dereferenceable(1)\l... getelementptr inbounds ([10 x i8], [10 x i8]* @.str, i32 0, i32 0), i32\l... %add.lcssa)\l  ret i32 %add.lcssa\l}"];
+}

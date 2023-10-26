@@ -1,0 +1,15 @@
+load0 mem_unit 
+const1 const
+add13 func
+mul7 func
+load5 mem_unit 
+const8 const
+load6 mem_unit 
+mul10 func
+store12 mem_unit 
+load9 mem_unit 
+add11 func
+const4 const
+mul3 func
+load2 mem_unit 
+const14 const

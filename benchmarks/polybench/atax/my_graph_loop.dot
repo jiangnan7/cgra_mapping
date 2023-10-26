@@ -1,0 +1,31 @@
+digraph G {
+mul0[opcode=mul];
+const1[opcode=const];
+load2[opcode=load];
+mul3[opcode=mul];
+const4[opcode=const];
+load5[opcode=load];
+load6[opcode=load];
+const7[opcode=const];
+load8[opcode=load];
+mul9[opcode=mul];
+add10[opcode=add];
+store11[opcode=store];
+add12[opcode=add];
+const13[opcode=const];
+load2->add10[operand=1]; //load->add
+load5->mul9[operand=1]; //load->mul
+load6->load8[operand=0]; //load->load
+load8->mul9[operand=0]; //load->mul
+mul9->add10[operand=0]; //mul->add
+add10->store11[operand=0]; //add->store
+add12->mul0[operand=1]; //add->gep_mul
+add12->mul3[operand=1]; //add->gep_mul
+const1->mul0[operand=0]; //gep_const->gep_mul
+mul0->load2[operand=0]; //gep_mul->load
+mul0->store11[operand=1]; //gep_mul->store
+const4->mul3[operand=0]; //gep_const->gep_mul
+mul3->load5[operand=0]; //gep_mul->load
+const7->load6[operand=0]; //const->load
+const13->add12[operand=1]; //const->add
+}

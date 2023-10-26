@@ -1,0 +1,17 @@
+  <architecture col="6" row="6">
+    <mesh row-range="0 5" col-range="0 5" 
+          out-north=".out0"
+          out-east=".out1"
+          out-west=".out2"
+          out-south=".out3"
+          in-north=".in0"
+          in-east=".in1"
+          in-west=".in2"
+          in-south=".in3"
+          io="every-side-port"
+          >
+      <interior>
+        <block module="meshbock_1reg">
+      </interior>
+    </diagonal>
+  </architecture>

@@ -1,0 +1,117 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "Input3",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "4, 398, -1588, 100",
+      "ref_name": "A",
+      "size": "1592"
+    },
+    {
+      "_gvid": 1,
+      "name": "Input5",
+      "label": "\\N",
+      "offset": "0, 4",
+      "opcode": "input",
+      "pattern": "4, 398, -1588, 100",
+      "ref_name": "A",
+      "size": "1596"
+    },
+    {
+      "_gvid": 2,
+      "name": "ADD6",
+      "label": "\\N",
+      "opcode": "add"
+    },
+    {
+      "_gvid": 3,
+      "name": "Input9",
+      "label": "\\N",
+      "offset": "8, 0",
+      "opcode": "input",
+      "pattern": "4, 398, -1588, 100",
+      "ref_name": "A",
+      "size": "1592"
+    },
+    {
+      "_gvid": 4,
+      "name": "ADD10",
+      "label": "\\N",
+      "opcode": "add"
+    },
+    {
+      "_gvid": 5,
+      "name": "ASHR11",
+      "label": "\\N",
+      "opcode": "ashr"
+    },
+    {
+      "_gvid": 6,
+      "name": "Output13",
+      "label": "\\N",
+      "offset": "0, 4",
+      "opcode": "output",
+      "pattern": "4, 398, -1588, 100",
+      "ref_name": "B",
+      "size": "1596"
+    },
+    {
+      "_gvid": 7,
+      "name": "CONST18",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "1"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 2,
+      "operand": "1"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 2,
+      "operand": "0"
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 4,
+      "operand": "0"
+    },
+    {
+      "_gvid": 3,
+      "tail": 3,
+      "head": 4,
+      "operand": "1"
+    },
+    {
+      "_gvid": 4,
+      "tail": 4,
+      "head": 5,
+      "operand": "0"
+    },
+    {
+      "_gvid": 5,
+      "tail": 5,
+      "head": 6,
+      "operand": "0"
+    },
+    {
+      "_gvid": 6,
+      "tail": 7,
+      "head": 5,
+      "operand": "1"
+    }
+  ]
+}

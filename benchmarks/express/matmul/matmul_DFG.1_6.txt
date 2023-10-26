@@ -1,0 +1,24 @@
+vertex MUL_20.in0
+vertex MUL_20
+vertex ADD_23
+vertex ADD_19
+vertex MUL_20.out0
+vertex ADD_23.in0
+vertex ADD_19.out0
+vertex ADD_23.out0
+vertex ADD_66.in0
+vertex ADD_66.out0
+vertex MUL_63
+vertex ADD_66
+vertex MUL_63.out0
+net MUL_20.in0 MUL_20
+net MUL_20 MUL_20.out0
+net ADD_23 ADD_23.out0
+net ADD_19 ADD_19.out0
+net MUL_20.out0 ADD_23.in0
+net ADD_23.in0 ADD_23
+net ADD_19.out0 MUL_20.in0
+net ADD_66.in0 ADD_66
+net MUL_63 MUL_63.out0
+net ADD_66 ADD_66.out0
+net MUL_63.out0 ADD_66.in0

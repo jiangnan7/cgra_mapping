@@ -1,0 +1,4 @@
+digraph cluster_matmul_DFG {
+	rankdir=LR splines=ortho
+	matmul_DFG [label=matmul_DFG]
+}

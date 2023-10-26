@@ -1,0 +1,20 @@
+digraph "CFG for 'kernel' function" {
+	label="CFG for 'kernel' function";
+
+	Node0x55929db92470 [shape=record,label="{entry:\l  br label %for.cond1.preheader\l}"];
+	Node0x55929db92470 -> Node0x55929db925a0;
+	Node0x55929db925a0 [shape=record,label="{for.cond1.preheader:                              \l  %t.050 = phi i32 [ 0, %entry ], [ %inc28, %for.inc27 ]\l  br label %for.cond4.preheader\l}"];
+	Node0x55929db925a0 -> Node0x55929db927b0;
+	Node0x55929db927b0 [shape=record,label="{for.cond4.preheader:                              \l  %i.049 = phi i32 [ 1, %for.cond1.preheader ], [ %add14, %for.inc24 ]\l  %add14 = add nuw nsw i32 %i.049, 1\l  %sub18 = add nsw i32 %i.049, -1\l  br label %for.body6\l}"];
+	Node0x55929db927b0 -> Node0x55929db92b50;
+	Node0x55929db92b50 [shape=record,label="{for.body6:                                        \l  %j.048 = phi i32 [ 1, %for.cond4.preheader ], [ %add11, %for.body6 ]\l  %call = call i32 bitcast (i32 (...)* @please_map_me to i32 ()*)() #7\l  %arrayidx7 = getelementptr inbounds [20 x [20 x i32]], [20 x [20 x i32]]*\l... @A, i32 0, i32 %i.049, i32 %j.048\l  %manupa0 = load i32, i32* %arrayidx7, align 4, !tbaa !3\l  %sub = add nsw i32 %j.048, -1\l  %arrayidx9 = getelementptr inbounds [20 x [20 x i32]], [20 x [20 x i32]]*\l... @A, i32 0, i32 %i.049, i32 %sub\l  %manupa1 = load i32, i32* %arrayidx9, align 4, !tbaa !3\l  %add = add nsw i32 %manupa1, %manupa0\l  %add11 = add nuw nsw i32 %j.048, 1\l  %arrayidx12 = getelementptr inbounds [20 x [20 x i32]], [20 x [20 x i32]]*\l... @A, i32 0, i32 %i.049, i32 %add11\l  %manupa2 = load i32, i32* %arrayidx12, align 4, !tbaa !3\l  %add13 = add nsw i32 %add, %manupa2\l  %arrayidx16 = getelementptr inbounds [20 x [20 x i32]], [20 x [20 x i32]]*\l... @A, i32 0, i32 %add14, i32 %j.048\l  %manupa3 = load i32, i32* %arrayidx16, align 4, !tbaa !3\l  %add17 = add nsw i32 %add13, %manupa3\l  %arrayidx20 = getelementptr inbounds [20 x [20 x i32]], [20 x [20 x i32]]*\l... @A, i32 0, i32 %sub18, i32 %j.048\l  %manupa4 = load i32, i32* %arrayidx20, align 4, !tbaa !3\l  %add21 = add nsw i32 %add17, %manupa4\l  %shr = ashr i32 %add21, 2\l  %arrayidx23 = getelementptr inbounds [20 x [20 x i32]], [20 x [20 x i32]]*\l... @B, i32 0, i32 %i.049, i32 %j.048\l  store i32 %shr, i32* %arrayidx23, align 4, !tbaa !3\l  %exitcond = icmp eq i32 %add11, 19\l  br i1 %exitcond, label %for.inc24, label %for.body6\l|{<s0>T|<s1>F}}"];
+	Node0x55929db92b50:s0 -> Node0x55929db928e0;
+	Node0x55929db92b50:s1 -> Node0x55929db92b50;
+	Node0x55929db928e0 [shape=record,label="{for.inc24:                                        \l  %exitcond51 = icmp eq i32 %add14, 19\l  br i1 %exitcond51, label %for.inc27, label %for.cond4.preheader\l|{<s0>T|<s1>F}}"];
+	Node0x55929db928e0:s0 -> Node0x55929db92640;
+	Node0x55929db928e0:s1 -> Node0x55929db927b0;
+	Node0x55929db92640 [shape=record,label="{for.inc27:                                        \l  %inc28 = add nuw nsw i32 %t.050, 1\l  %exitcond52 = icmp eq i32 %inc28, 20\l  br i1 %exitcond52, label %for.end29, label %for.cond1.preheader\l|{<s0>T|<s1>F}}"];
+	Node0x55929db92640:s0 -> Node0x55929db94360;
+	Node0x55929db92640:s1 -> Node0x55929db925a0;
+	Node0x55929db94360 [shape=record,label="{for.end29:                                        \l  ret void\l}"];
+}

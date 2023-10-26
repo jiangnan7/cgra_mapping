@@ -1,0 +1,173 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "Input2",
+      "label": "\\N",
+      "offset": "80, 4",
+      "opcode": "input",
+      "pattern": "4, 18, 12, 18, -1428, 20",
+      "ref_name": "A",
+      "size": "1436"
+    },
+    {
+      "_gvid": 1,
+      "name": "Input5",
+      "label": "\\N",
+      "offset": "80, 0",
+      "opcode": "input",
+      "pattern": "4, 18, 12, 18, -1428, 20",
+      "ref_name": "A",
+      "size": "1432"
+    },
+    {
+      "_gvid": 2,
+      "name": "ADD6",
+      "label": "\\N",
+      "opcode": "add"
+    },
+    {
+      "_gvid": 3,
+      "name": "Input9",
+      "label": "\\N",
+      "offset": "88, 0",
+      "opcode": "input",
+      "pattern": "4, 18, 12, 18, -1428, 20",
+      "ref_name": "A",
+      "size": "1432"
+    },
+    {
+      "_gvid": 4,
+      "name": "ADD10",
+      "label": "\\N",
+      "opcode": "add"
+    },
+    {
+      "_gvid": 5,
+      "name": "Input12",
+      "label": "\\N",
+      "offset": "160, 4",
+      "opcode": "input",
+      "pattern": "4, 18, 12, 18, -1428, 20",
+      "ref_name": "A",
+      "size": "1436"
+    },
+    {
+      "_gvid": 6,
+      "name": "ADD13",
+      "label": "\\N",
+      "opcode": "add"
+    },
+    {
+      "_gvid": 7,
+      "name": "Input15",
+      "label": "\\N",
+      "offset": "0, 4",
+      "opcode": "input",
+      "pattern": "4, 18, 12, 18, -1428, 20",
+      "ref_name": "A",
+      "size": "1436"
+    },
+    {
+      "_gvid": 8,
+      "name": "ADD16",
+      "label": "\\N",
+      "opcode": "add"
+    },
+    {
+      "_gvid": 9,
+      "name": "ASHR17",
+      "label": "\\N",
+      "opcode": "ashr"
+    },
+    {
+      "_gvid": 10,
+      "name": "Output19",
+      "label": "\\N",
+      "offset": "80, 4",
+      "opcode": "output",
+      "pattern": "4, 18, 12, 18, -1428, 20",
+      "ref_name": "B",
+      "size": "1436"
+    },
+    {
+      "_gvid": 11,
+      "name": "CONST27",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "2"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 2,
+      "operand": "1"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 2,
+      "operand": "0"
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 4,
+      "operand": "0"
+    },
+    {
+      "_gvid": 3,
+      "tail": 3,
+      "head": 4,
+      "operand": "1"
+    },
+    {
+      "_gvid": 4,
+      "tail": 4,
+      "head": 6,
+      "operand": "0"
+    },
+    {
+      "_gvid": 5,
+      "tail": 5,
+      "head": 6,
+      "operand": "1"
+    },
+    {
+      "_gvid": 6,
+      "tail": 6,
+      "head": 8,
+      "operand": "0"
+    },
+    {
+      "_gvid": 7,
+      "tail": 7,
+      "head": 8,
+      "operand": "1"
+    },
+    {
+      "_gvid": 8,
+      "tail": 8,
+      "head": 9,
+      "operand": "0"
+    },
+    {
+      "_gvid": 9,
+      "tail": 9,
+      "head": 10,
+      "operand": "0"
+    },
+    {
+      "_gvid": 10,
+      "tail": 11,
+      "head": 9,
+      "operand": "1"
+    }
+  ]
+}
