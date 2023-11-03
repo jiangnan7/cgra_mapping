@@ -3,7 +3,7 @@ import os
 import random
 import time
 import sys
-from  subgraph_matching.GraphAnalyze import GraphAnalyze
+# from  subgraph_matching.GraphAnalyze import GraphAnalyze
 import configparser
 import subprocess as sp
 import datetime as dt
